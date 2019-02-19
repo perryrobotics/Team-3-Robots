@@ -109,6 +109,13 @@ arm_up(50)
 open_claw(50)
 arm_down(50)
 move(900,1100)
+arm_back(50)
+move_left(900,1500)
+move_back(900,300)
+set_servo_position(3,1000)
+msleep(500)
+move_right(900,800)
+
   
         
         
