@@ -1,4 +1,4 @@
-#!/usr/bin/python
+3#!/usr/bin/python
 import os, sys
 from wallaby import *
 Lmotor = 3
@@ -19,7 +19,7 @@ Box_down = 450
 
 Touch_port = 0
 Line_port = 0
-Thresh = 2750
+Thresh = 3000
     
 def move(speed, ticks):
 	cmpc(Lmotor)
