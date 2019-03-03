@@ -82,6 +82,20 @@ def right_to_black(speed):
 		pass
 	ao()   
             
+def left_to_black(speed):
+	mav(Lmotor, -speed)
+	mav(Rmotor, speed)
+	while analog(Line_port) < Thresh:
+		pass
+	ao()  
+            
+def left_to_white(speed):
+	mav(Lmotor, -speed)
+	mav(Rmotor, speed)
+	while analog(Line_port) > Thresh:
+		pass
+	ao()  
+            
 def move_servo_slow(port, start_pos, end_pos, step):
 	if  end_pos < start_pos:
 		step=-step
